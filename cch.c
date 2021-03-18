@@ -6,12 +6,7 @@ int isvowel(char c);
 
 int main(void) {
   //initalizing ints to track values
-  int totalUpperCase = 0;
-  int totalLowerCase = 0;
-  int totalVowels = 0;
-  int totalConsonants = 0;
-  int totalDigits = 0;
-  int total = 0;
+  int totalUpperCase,totalLowerCase,totalVowels,totalConsonants,totalDigits,total = 0;
   int inputStream;
   //initialize the unput stream to get char and start the while loop
   while((inputStream = getchar()) != EOF){
@@ -38,7 +33,7 @@ int main(void) {
     }
   } 
   // print statements for all tracked values
-  printf("upper-case: %d\n", totalUpperCase);
+  printf("\nupper-case: %d\n", totalUpperCase);
   printf("lower-case: %d\n", totalLowerCase);
   printf("vowels: %d\n",totalVowels);
   printf("consonants: %d\n",totalConsonants);
