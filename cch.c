@@ -2,6 +2,8 @@
 #include <stdio.h>				//The standard I/O functions
 #include <ctype.h>                             //Classification library 
 
+int isvowel(char c);
+
 int main(void) {
   //initalizing ints to track values
   int totalUpperCase = 0;
@@ -28,9 +30,10 @@ int main(void) {
       totalDigits++;
     }
     //adds to the total Vowels in characteris a vowel
-    if(inputStream == 'A' || inputStream == 'a' || inputStream == 'E' || inputStream == 'e' || inputStream =='I' || inputStream == 'i' || inputStream == 'O' || inputStream == 'o' || inputStream == 'U' || inputStream == 'u' || inputStream == 'Y' || inputStream == 'y'){
+    if(isvowel(inputStream)){
       totalVowels++;
-    }else if(isalpha(inputStream)){
+    }
+	if(isalpha(inputStream)){
       totalConsonants++;
     }
   } 
@@ -44,4 +47,11 @@ int main(void) {
 
   return 0;
 }
-	
+
+//returns 1 if the char is vowel otherwise 0
+int isvowel(char c){
+	 if(c == 'A' ||c == 'a' || c == 'E' || c == 'e' || c =='I' || c == 'i' || c == 'O' || c == 'o' || c == 'U' || c == 'u' || c == 'Y' || c == 'y'){
+   		return 1;
+	 }
+	 return 0;
+}
