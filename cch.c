@@ -1,9 +1,7 @@
 //Include definitions for C Runtime Library functions used in this program
 #include <stdio.h>				//The standard I/O functions
 #include <ctype.h>                             //Classification library 
-//-------------------------------------------------------------------------------
-//This is the main function, invoked by the C Runtime (CRT) to start the program
-//-------------------------------------------------------------------------------
+
 int main(void) {
   //initalizing ints to track values
   int totalUpperCase = 0;
@@ -37,18 +35,13 @@ int main(void) {
     }
   } 
   // print statements for all tracked values
-  printf("upper-case: ");
-  printf("%d\n" , totalUpperCase);
-  printf("lower-case: ");
-  printf("%d\n", totalLowerCase);
-  printf("vowels: ");
-  printf("%d\n" , totalVowels);
-  printf("consonants: ");
-  printf("%d\n", totalConsonants);
-  printf("digits: ");
-  printf("%d\n", totalDigits);
-  printf("total: ");
-  printf("%d\n", total);
+  printf("upper-case: %d\n", totalUpperCase);
+  printf("lower-case: %d\n", totalLowerCase);
+  printf("vowels: %d\n",totalVowels);
+  printf("consonants: %d\n",totalConsonants);
+  printf("digits: %d\n", totalDigits);
+  printf("total: %d\n", total);
+
   return 0;
 }
 	
